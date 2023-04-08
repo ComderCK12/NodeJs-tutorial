@@ -1,0 +1,2 @@
+npm init -> creates a package.json file
+Whenever we install any package from npm, it gets stored in package.json as dependency

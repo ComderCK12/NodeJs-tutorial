@@ -1,0 +1,9 @@
+Asynchronous functions are used in Node.js because they allow for non-blocking I/O operations, which can make the application more efficient and responsive.
+
+In synchronous programming, the program executes each line of code in order, and each operation must complete before the program can move on to the next one. This means that if an operation takes a long time to complete, the program will be blocked and unable to do anything else until the operation is finished.
+
+In contrast, asynchronous programming allows the program to continue executing other code while waiting for an I/O operation to complete. This means that multiple operations can be initiated at the same time, and the program can continue to execute other code while waiting for them to complete.
+
+For example, if a Node.js application needs to make a request to an external API to retrieve some data, using a synchronous function would block the program until the response is received. This can cause the program to become unresponsive if the API response takes a long time to arrive. In contrast, an asynchronous function can be used to initiate the request and continue executing other code while waiting for the response to arrive.
+
+Asynchronous functions in Node.js are typically implemented using callbacks, promises, or async/await syntax. These patterns allow for more flexible and expressive code that is easier to read and maintain. Additionally, Node.js provides many built-in modules that are designed to work with asynchronous functions, such as the fs module for reading and writing files, the http module for making HTTP requests, and the stream module for working with streams of data.
