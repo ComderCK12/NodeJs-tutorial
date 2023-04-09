@@ -1,0 +1,10 @@
+Streams in Node.js are a way of handling I/O operations efficiently, especially when dealing with large amounts of data. A stream is an abstract interface for working with streaming data in Node.js, and it provides a way to read and write data incrementally, piece by piece, rather than reading or writing the entire data at once.
+
+Node.js provides four types of streams: Readable, Writable, Duplex, and Transform.
+
+A Readable stream represents a source of data that can be read incrementally, such as a file, network socket, or HTTP response. 
+A Writable stream represents a destination for data that can be written incrementally, such as a file, network socket, or HTTP request. 
+A Duplex stream is both readable and writable, such as a TCP socket. 
+A Transform stream is a special type of Duplex stream that can modify or transform data as it passes through.
+
+Eg: listening to music or watching a video in real time instead of downloading

@@ -1,0 +1,31 @@
+Node.js has inbuilt module called 'Events' where you can create, fire and listen your own events 
+
+The Events module is a core module in Node.js that provides a way to handle events in a Node.js application.
+
+In Node.js, many objects emit events when something interesting happens, like a file being opened, a network request completing, or a timer firing. The Events module provides an EventEmitter class that allows developers to create custom objects that can emit and listen to events.
+
+To use the Events module, you first need to create an instance of the EventEmitter class. You can then register event listeners on that object using the on method or the shorthand addListener method. When an event is emitted, all registered listeners are called with the event data.
+
+Here's an example of using the Events module to create and listen to an event:
+
+Code: 
+
+const EventEmitter = require('events');
+
+// Create a new event emitter instance
+const myEmitter = new EventEmitter();
+
+// Register a listener for the 'myEvent' event
+myEmitter.on('myEvent', (data) => {
+  console.log(`Received data: ${data}`);
+});
+
+// Emit the 'myEvent' event with some data
+myEmitter.emit('myEvent', 'Hello, world!');
+
+
+
+
+When you run this code, it will output Received data: Hello, world! to the console.
+
+The Events module is used extensively throughout the Node.js core modules and many third-party modules, making it a fundamental part of building Node.js applications.
